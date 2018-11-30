@@ -39,6 +39,10 @@ caption {
 </tr>
 <tr>
 	<td>Email:</td><td><input type="email" name="email"></td>
+	
+</tr>
+<tr>
+	<td></td><td id="errorMes" name="errorMes"></td>
 </tr>
 <tr>
 	<td>Date of Birth:</td><td><input type="Date" name="Birth"></td>
@@ -139,11 +143,12 @@ let pass = document.getElementsByName("Passw")[0].value;
 	}
 	
 let mail = document.getElementsByName("email")[0].value;
-	if(mail.length<2){
-		document.getElementsByName("errorMes")[2].innerHTML="Mail must have minimum 2 letters";
+console.log("skuska");
+	if( ( /@/.test(pass) )===true){
+		document.getElementsByName("errorMes")[2].innerHTML="";
 	}
 	else{
-		document.getElementsByName("errorMes")[2].innerHTML="";
+		document.getElementsByName("errorMes")[2].innerHTML="Mail must have @symbol";
 	}
 	
 }
