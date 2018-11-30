@@ -1,14 +1,14 @@
 
 form{
-	padding-left: 35%;
-	padding-right: 35%;
+	padding-left: 30%;
+	padding-right: 30%;
 }
 table{
 	margin: auto;
 }
 caption{
-	background: #c9cacc;
-	padding: 5px;
+	background: lightgrey;
+	padding: 4px;
 }
 #errorMes{
 	color: red;
